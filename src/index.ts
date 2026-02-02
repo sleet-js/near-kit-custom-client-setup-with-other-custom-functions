@@ -5,3 +5,9 @@ export {
   getStoredNetworkId,
   NETWORK_STORAGE_KEY,
 } from "./new";
+// network
+export {
+  toggleNetwork,
+  setNetwork_mainnet,
+  setNetwork_testnet,
+} from "./network";
