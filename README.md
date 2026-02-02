@@ -13,6 +13,8 @@ a custom near-kit near client setup with hot wallet connect and functions for in
 
 develop and publish this package
 ```bash
+# i had issues with other versions
+bun add near-kit@0.6.3 @hot-labs/near-connect@0.6.11
 bun install
 # bun run index.ts
 bun publish --dry-run
@@ -32,13 +34,13 @@ bun publish --access public
 
 add
 ```sh
-npm i @sleet-js/fastintear-custom-client-setup-with-other-custom-functions
-bun add @sleet-js/fastintear-custom-client-setup-with-other-custom-functions
+npm i @sleet-js/near-kit-custom-client-setup-with-other-custom-functions
+bun add @sleet-js/near-kit-custom-client-setup-with-other-custom-functions
 ```
 
 import
 ```js
-import { nearClient } from '@sleet-js/fastintear-custom-client-setup-with-other-custom-functions';
+import { nearClient } from '@sleet-js/near-kit-custom-client-setup-with-other-custom-functions';
 ```
 
 
