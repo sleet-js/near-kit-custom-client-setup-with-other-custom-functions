@@ -29,6 +29,7 @@ bun publish --access public
 - dynamic network support
 - typescript
 - svelte auth and network button
+- hot near connect
 
 ## HOW TO USE
 
