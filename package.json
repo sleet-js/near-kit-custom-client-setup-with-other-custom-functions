@@ -10,6 +10,6 @@
   },
   "dependencies": {
     "@hot-labs/near-connect": "0.6.11",
-    "near-kit": "0.6.3"
+    "near-kit": "^0.10.0"
   }
 }
