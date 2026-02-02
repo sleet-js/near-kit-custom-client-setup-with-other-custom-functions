@@ -41,7 +41,7 @@ bun add @sleet-js/near-kit-custom-client-setup-with-other-custom-functions
 
 import
 ```js
-import { nearClient } from '@sleet-js/near-kit-custom-client-setup-with-other-custom-functions';
+import { near_kit_client } from '@sleet-js/near-kit-custom-client-setup-with-other-custom-functions';
 ```
 
 
