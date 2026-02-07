@@ -1,6 +1,6 @@
 import { Near } from "near-kit";
 // ==============================================
-export const NETWORK_STORAGE_KEY = "network_id"; // used for network toggle
+const NETWORK_STORAGE_KEY = "network_id"; // used for network toggle
 // ==============================================
 // Create a NEAR instance using the connector
 const near_kit_mainnet_archival = new Near({
@@ -12,7 +12,7 @@ const near_kit_testnet_archival = new Near({
   rpcUrl: "https://archival-rpc.testnet.fastnear.com"
 });
 // ==============================================
-export function getStoredNetworkId(): "mainnet" | "testnet" {
+function getStoredNetworkId(): "mainnet" | "testnet" {
   const raw = localStorage.getItem(NETWORK_STORAGE_KEY);
   const value = (raw || "mainnet").trim().toLowerCase();
   return value === "testnet" ? "testnet" : "mainnet";
