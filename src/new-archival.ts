@@ -5,9 +5,11 @@ export const NETWORK_STORAGE_KEY = "network_id"; // used for network toggle
 // Create a NEAR instance using the connector
 const near_kit_mainnet_archival = new Near({
   network: "mainnet",
+  rpcUrl: "https://archival-rpc.mainnet.fastnear.com"
 });
 const near_kit_testnet_archival = new Near({
   network: "mainnet",
+  rpcUrl: "https://archival-rpc.testnet.fastnear.com"
 });
 // ==============================================
 export function getStoredNetworkId(): "mainnet" | "testnet" {
