@@ -30,6 +30,7 @@ bun publish --access public
 - typescript
 - svelte auth and network button
 - hot near connect
+- archival client for viewing older data
 
 ## HOW TO USE
 
