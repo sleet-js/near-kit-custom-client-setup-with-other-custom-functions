@@ -17,6 +17,7 @@ develop and publish this package
 bun add @hot-labs/near-connect@0.6.11
 bun install
 # bun run index.ts
+bun run build
 bun publish --dry-run
 bunx npm login
 bun publish --access public

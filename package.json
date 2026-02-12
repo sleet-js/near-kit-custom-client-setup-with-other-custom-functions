@@ -1,15 +1,26 @@
 {
   "name": "@sleet-js/near-kit-custom-client-setup-with-other-custom-functions",
   "description": "a custom near-kit near client setup",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "homepage": "https://sleet-js.near.page",
-  "module": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "browser": "dist/index.js",
   "type": "module",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/sleet-js/near-kit-custom-client-setup-with-other-custom-functions.git"
   },
+  "scripts": {
+    "build": "bun run tsc"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
   "publishConfig": {
     "access": "public"
   },
