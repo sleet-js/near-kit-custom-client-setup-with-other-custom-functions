@@ -1,9 +1,11 @@
 # reusable functions
+
 Reusable near kit functions
 
 ---
 
 fun
+
 - [x] greeting
 - [ ] rhea
 - [ ] ft

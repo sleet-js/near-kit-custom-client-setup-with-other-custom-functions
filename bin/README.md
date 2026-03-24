@@ -1,7 +1,9 @@
 # BIN
+
 runnable examples
 
 run
+
 ```sh
 cp .env.example .env
 # bun run

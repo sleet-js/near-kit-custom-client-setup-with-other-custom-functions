@@ -1,4 +1,4 @@
-export { wrap_near_methods_const } from '@sleet-js/wrap-near-contract-methods-const';
+export { wrap_near_methods_const } from "@sleet-js/wrap-near-contract-methods-const";
 import { MY_ENV_NEAR_networkId } from "../new-env";
 import { getStoredNetworkId } from "../new-hot";
 // ===========================================

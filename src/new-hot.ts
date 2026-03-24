@@ -27,8 +27,7 @@ export function getStoredNetworkId(): "mainnet" | "testnet" {
 // ==============================================
 export function near_kit_client() {
   const networkId = getStoredNetworkId();
-  const client =
-    networkId === "testnet" ? near_kit_testnet : near_kit_mainnet;
+  const client = networkId === "testnet" ? near_kit_testnet : near_kit_mainnet;
   console.log("[near_kit_client] networkId:", networkId);
   console.log(
     "[near_kit_client] client:",
