@@ -30,11 +30,11 @@ export async function ft_transfer_fun(
   receiver_id: ft_args_params_interface["receiver_id"],
   amount: ft_args_params_interface["amount"],
 ) {
-  const result = await near.call(
-    ft_contractId,
-    ft_methods_const.ft_transfer,
-    { amount: amount, receiver_id: receiver_id },
-  );
+  const result = await near.call(ft_contractId, ft_methods_const.ft_transfer, {
+    // memo: null,
+    amount: amount,
+    receiver_id: receiver_id,
+  });
   return result as FinalExecutionOutcome;
 }
 // ===========================================
