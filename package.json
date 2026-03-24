@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "@hot-labs/near-connect": "0.6.11",
+    "dotenv": "^17.3.1",
     "near-kit": "^0.10.0"
   }
 }
