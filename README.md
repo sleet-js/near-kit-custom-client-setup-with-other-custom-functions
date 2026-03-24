@@ -32,6 +32,7 @@ bun publish --access public
 - ~~svelte auth and network button~~
 - hot near connect
 - archival client for viewing older data
+- multiple clients set up and reusable functions that accept near client as an argument so they can be reused in the browser or locally
 
 ## HOW TO USE
 

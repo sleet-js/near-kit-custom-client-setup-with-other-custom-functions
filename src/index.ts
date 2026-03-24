@@ -1,3 +1,4 @@
+// ===========================================
 // nearClient
 export {
   near_kit_client,
@@ -13,3 +14,6 @@ export {
 } from "./network";
 // archival
 export { near_kit_client_archival } from "./new-archival";
+// ===========================================
+// ===========================================
+// copyright 2026 by sleet.near
