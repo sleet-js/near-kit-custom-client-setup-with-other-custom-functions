@@ -33,6 +33,7 @@
   "dependencies": {
     "@hot-labs/near-connect": "0.11.1",
     "@sleet-js/ref-exchange-methods-const": "^0.0.3",
+    "@sleet-js/wrap-near-contract-methods-const": "^0.0.1",
     "dotenv": "^17.3.1",
     "near-kit": "^0.12.0"
   }
