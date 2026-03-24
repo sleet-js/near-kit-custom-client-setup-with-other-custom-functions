@@ -16,6 +16,7 @@ develop and publish this package
 # i had issues with other versions
 bun add @hot-labs/near-connect@0.6.11
 bun install
+bun run tsc --noEmit
 # bun run index.ts
 bun run build
 bun publish --dry-run
