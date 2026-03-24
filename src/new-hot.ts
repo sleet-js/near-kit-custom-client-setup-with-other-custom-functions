@@ -8,13 +8,14 @@ const near_connect_mainnet = new NearConnector({ network: "mainnet" });
 const near_connect_testnet = new NearConnector({ network: "testnet" });
 // ==============================================
 // Create a NEAR instance using the connector
+// Type assertion needed for near-kit 0.12.0+ compatibility
 const near_kit_mainnet = new Near({
   network: "mainnet",
-  wallet: fromHotConnect(near_connect_mainnet),
+  wallet: fromHotConnect(near_connect_mainnet as any),
 });
 const near_kit_testnet = new Near({
-  network: "mainnet",
-  wallet: fromHotConnect(near_connect_testnet),
+  network: "testnet",
+  wallet: fromHotConnect(near_connect_testnet as any),
 });
 // ==============================================
 export function getStoredNetworkId(): "mainnet" | "testnet" {
