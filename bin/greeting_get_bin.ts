@@ -8,3 +8,4 @@ console.log(
     hello_contractId_for_network_env,
   ),
 );
+// ==============================================
