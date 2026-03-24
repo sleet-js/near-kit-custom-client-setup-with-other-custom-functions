@@ -31,11 +31,12 @@ export async function ft_transfer_fun(
   receiver_id: ft_args_params_interface["receiver_id"],
   amount: ft_args_params_interface["amount"],
 ) {
-  const result = await near.call(ft_contractId, ft_methods_const.ft_transfer, {
-    // memo: null,
-    amount: amount,
-    receiver_id: receiver_id,
-  });
+  const result = await near.call(
+    ft_contractId,
+    ft_methods_const.ft_transfer,
+    { amount: amount, receiver_id: receiver_id },
+    { attachedDeposit: "0.000000000000000000000001 NEAR" },
+  );
   return result as FinalExecutionOutcome;
 }
 // ===========================================
@@ -51,6 +52,7 @@ export async function ft_transfer_call_fun(
     ft_contractId,
     ft_methods_const.ft_transfer_call,
     { msg: msg, amount: amount, receiver_id: receiver_id },
+    { attachedDeposit: "0.000000000000000000000001 NEAR" },
   );
   return result as FinalExecutionOutcome;
 }
