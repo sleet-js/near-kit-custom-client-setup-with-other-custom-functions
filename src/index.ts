@@ -56,10 +56,15 @@ export {
 // ==== greeting ====
 export { greeting_get_greeting_fun } from "./fun/greeting/greeting_get_fun";
 export { greeting_set_greeting_fun } from "./fun/greeting/greeting_set_fun";
+// ==== wrap near ====
+export {
+  wrap_near_deposit_fun,
+  wrap_near_withdraw_fun,
+} from "./fun/near/wrap_near";
 // ===========================================
 // ===========================================
 // types
-export type { AmountInput } from "./types/AmountInput"
+export type { AmountInput } from "./types/AmountInput";
 // ===========================================
 // ===========================================
 // copyright 2026 by sleet.near
