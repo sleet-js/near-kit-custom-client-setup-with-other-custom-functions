@@ -7,6 +7,7 @@ import type { FinalExecutionOutcome } from "near-kit";
 // ft_balance_of
 // call
 // ft_transfer
+// ft_transfer_call
 // ===========================================
 // ft_balance_of
 export async function ft_balance_of_fun(
@@ -27,11 +28,28 @@ export async function ft_transfer_fun(
   near: Near,
   ft_contractId: string,
   receiver_id: ft_args_params_interface["receiver_id"],
+  amount: ft_args_params_interface["amount"],
 ) {
   const result = await near.call(
     ft_contractId,
     ft_methods_const.ft_transfer,
-    { receiver_id: receiver_id },
+    { amount: amount, receiver_id: receiver_id },
+  );
+  return result as FinalExecutionOutcome;
+}
+// ===========================================
+// ft_transfer_call
+export async function ft_transfer_call_fun(
+  near: Near,
+  ft_contractId: string,
+  receiver_id: ft_args_params_interface["receiver_id"],
+  msg: ft_args_params_interface["msg"],
+  amount: ft_args_params_interface["amount"],
+) {
+  const result = await near.call(
+    ft_contractId,
+    ft_methods_const.ft_transfer_call,
+    { msg: msg, amount: amount, receiver_id: receiver_id },
   );
   return result as FinalExecutionOutcome;
 }
