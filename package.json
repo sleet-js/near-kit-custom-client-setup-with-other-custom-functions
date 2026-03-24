@@ -25,14 +25,15 @@
     "access": "public"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "^1.3.11"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^6.0.2"
   },
   "dependencies": {
-    "@hot-labs/near-connect": "0.6.11",
+    "@hot-labs/near-connect": "0.11.1",
+    "@sleet-js/ref-exchange-methods-const": "^0.0.3",
     "dotenv": "^17.3.1",
-    "near-kit": "^0.10.0"
+    "near-kit": "^0.12.0"
   }
 }
