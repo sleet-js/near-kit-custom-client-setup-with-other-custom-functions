@@ -68,7 +68,7 @@ export {
   ref_get_number_of_pools_function,
   ref_get_deposits_function,
   ref_get_pool_function,
-  ref_get_pools_function
+  ref_get_pools_function,
 } from "./fun/rhea/rhea_fun";
 // ==== ft ====
 export {
