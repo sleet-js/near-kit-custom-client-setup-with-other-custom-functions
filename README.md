@@ -22,6 +22,10 @@ bun run build
 bun publish --dry-run
 bunx npm login
 bun publish --access public
+
+# prettier
+bunx prettier . --write
+bunx prettier . --check
 ```
 
 ---

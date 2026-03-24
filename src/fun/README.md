@@ -4,15 +4,17 @@ Reusable near kit functions
 ---
 
 fun
-- greeting
-- rhea
-- ft
-- social
-- berryclub
-- pool (staking)
-- warsofcards
-- hos
-- near (wrap, create account, etc.)
+- [x] greeting
+- [ ] rhea
+- [ ] ft
+- [ ] social
+- [ ] berryclub
+- [ ] pool (staking)
+- [ ] warsofcards
+- [ ] hos
+- [ ] near (wrap, create account, etc.)
+  - [x] wrap
+- [ ] intear
 
 ---
 
