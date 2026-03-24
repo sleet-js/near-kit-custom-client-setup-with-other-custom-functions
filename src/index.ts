@@ -1,4 +1,5 @@
 // ===========================================
+// ===========================================
 // web
 // near_kit_client
 export {
@@ -16,6 +17,7 @@ export {
 // archival
 export { near_kit_client_archival } from "./new-archival";
 // ===========================================
+// ===========================================
 // backend
 // near_kit_env
 export {
@@ -25,6 +27,7 @@ export {
   MY_ENV_NEAR_publicKey,
   MY_ENV_NEAR_privateKey,
 } from "./new-env";
+// ===========================================
 // ===========================================
 // utility
 // ==== greeting ====
@@ -45,7 +48,14 @@ export {
 export {
   wrap_contractId_for_network_env,
   wrap_contractId_for_network_web,
-  wrap_near_methods_const
+  wrap_near_methods_const,
 } from "./lib/contract_near_wrap_const";
+// ===========================================
+// ===========================================
+// fun
+// ==== greeting ====
+export { greeting_get_greeting_fun } from "./fun/greeting/greeting_get_fun";
+export { greeting_set_greeting_fun } from "./fun/greeting/greeting_set_fun";
+// ===========================================
 // ===========================================
 // copyright 2026 by sleet.near
