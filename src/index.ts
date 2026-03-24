@@ -44,6 +44,9 @@ export {
   rhea_contractId_for_network_web,
   ref_exchange_methods_const,
 } from "./lib/contract_rhea_const";
+// ==== ft ====
+export { ft_methods_const } from "@sleet-js/ft-methods-const";
+export type { ft_args_params_interface } from "./lib/contract_ft_args";
 // ==== wrap near ====
 export {
   wrap_contractId_for_network_env,
@@ -56,6 +59,8 @@ export {
 // ==== greeting ====
 export { greeting_get_greeting_fun } from "./fun/greeting/greeting_get_fun";
 export { greeting_set_greeting_fun } from "./fun/greeting/greeting_set_fun";
+// ==== ft ====
+export { ft_balance_of_fun } from "./fun/ft/ft_fun";
 // ==== wrap near ====
 export {
   wrap_near_deposit_fun,
