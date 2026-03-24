@@ -63,6 +63,13 @@ export {
 // ==== greeting ====
 export { greeting_get_greeting_fun } from "./fun/greeting/greeting_get_fun";
 export { greeting_set_greeting_fun } from "./fun/greeting/greeting_set_fun";
+// ==== rhea ====
+export {
+  ref_get_number_of_pools_function,
+  ref_get_deposits_function,
+  ref_get_pool_function,
+  ref_get_pools_function
+} from "./fun/rhea/rhea_fun";
 // ==== ft ====
 export {
   ft_balance_of_fun,

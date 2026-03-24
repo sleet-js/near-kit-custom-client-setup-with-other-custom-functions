@@ -18,6 +18,7 @@ import type { FinalExecutionOutcome } from "near-kit";
 // get_number_of_pools
 // get_pool
 // get_deposits
+// get_pools
 // call
 // ===========================================
 // ================================================
