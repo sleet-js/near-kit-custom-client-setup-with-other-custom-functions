@@ -38,7 +38,11 @@ export {
   greeting_contract_methods,
 } from "./lib/contract_greeting_const";
 // ==== rhea ====
-export type { ref_args_params_interface } from "./lib/contract_rhea_args";
+export type {
+  ref_args_params_interface,
+  ref_swap_action_type,
+  ref_swap_function_args,
+} from "./lib/contract_rhea_args";
 export {
   rhea_contractId_for_network_env,
   rhea_contractId_for_network_web,
