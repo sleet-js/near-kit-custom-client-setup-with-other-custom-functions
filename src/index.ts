@@ -58,4 +58,8 @@ export { greeting_get_greeting_fun } from "./fun/greeting/greeting_get_fun";
 export { greeting_set_greeting_fun } from "./fun/greeting/greeting_set_fun";
 // ===========================================
 // ===========================================
+// types
+export type { AmountInput } from "./types/AmountInput"
+// ===========================================
+// ===========================================
 // copyright 2026 by sleet.near
