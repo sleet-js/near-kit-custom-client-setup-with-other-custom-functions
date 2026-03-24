@@ -8,13 +8,16 @@ import {
   ref_get_deposits_function,
 } from "../../src/index";
 // ==============================================
+console.log("==============================================")
 console.log(
   await ref_get_number_of_pools_function(
     near_kit_env,
     rhea_contractId_for_network_env,
   ),
 );
+console.log("==============================================")
 // ==============================================
+console.log("==============================================")
 console.log(
   await ref_get_pool_function(
     near_kit_env,
@@ -22,7 +25,10 @@ console.log(
     100,
   ),
 );
+console.log("==============================================")
+
 // ==============================================
+console.log("==============================================")
 console.log(
   await ref_get_pools_function(
     near_kit_env,
@@ -31,7 +37,9 @@ console.log(
     10,
   ),
 );
+console.log("==============================================")
 // ==============================================
+console.log("==============================================")
 console.log(
   await ref_get_deposits_function(
     near_kit_env,
@@ -39,4 +47,5 @@ console.log(
     "sleet.testnet",
   ),
 );
+console.log("==============================================")
 // ==============================================
