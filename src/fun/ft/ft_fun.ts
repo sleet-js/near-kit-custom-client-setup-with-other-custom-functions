@@ -8,6 +8,7 @@ import type { FinalExecutionOutcome } from "near-kit";
 // call
 // ft_transfer
 // ft_transfer_call
+// storage_deposit
 // ===========================================
 // ft_balance_of
 export async function ft_balance_of_fun(
@@ -50,6 +51,20 @@ export async function ft_transfer_call_fun(
     ft_contractId,
     ft_methods_const.ft_transfer_call,
     { msg: msg, amount: amount, receiver_id: receiver_id },
+  );
+  return result as FinalExecutionOutcome;
+}
+// ===========================================
+// storage_deposit
+export async function ft_storage_deposit_fun(
+  near: Near,
+  ft_contractId: string,
+) {
+  const result = await near.call(
+    ft_contractId,
+    ft_methods_const.storage_deposit,
+    {},
+    { attachedDeposit: "0.00125 NEAR" },
   );
   return result as FinalExecutionOutcome;
 }

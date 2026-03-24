@@ -8,13 +8,13 @@ fun
 
 - [x] greeting
 - [ ] rhea
-- [ ] ft
+- [x] ft
 - [ ] social
 - [ ] berryclub
 - [ ] pool (staking)
 - [ ] warsofcards
 - [ ] hos
-- [ ] near (wrap, create account, etc.)
+- [x] near (wrap, create account, etc.)
   - [x] wrap
 - [ ] intear
 

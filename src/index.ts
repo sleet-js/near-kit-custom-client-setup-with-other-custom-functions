@@ -60,7 +60,12 @@ export {
 export { greeting_get_greeting_fun } from "./fun/greeting/greeting_get_fun";
 export { greeting_set_greeting_fun } from "./fun/greeting/greeting_set_fun";
 // ==== ft ====
-export { ft_balance_of_fun } from "./fun/ft/ft_fun";
+export {
+  ft_balance_of_fun,
+  ft_transfer_fun,
+  ft_transfer_call_fun,
+  ft_storage_deposit_fun,
+} from "./fun/ft/ft_fun";
 // ==== wrap near ====
 export {
   wrap_near_deposit_fun,
