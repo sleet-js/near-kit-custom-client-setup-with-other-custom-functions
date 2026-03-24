@@ -4,7 +4,7 @@ export {
   near_connect_client,
   getStoredNetworkId,
   NETWORK_STORAGE_KEY,
-} from "./new";
+} from "./new-hot";
 // network
 export {
   toggleNetwork,

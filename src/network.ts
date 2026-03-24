@@ -1,4 +1,4 @@
-import { NETWORK_STORAGE_KEY } from "./new";
+import { NETWORK_STORAGE_KEY } from "./new-hot";
 // ===========================================
 let NETWORK_ID: string;
 //
