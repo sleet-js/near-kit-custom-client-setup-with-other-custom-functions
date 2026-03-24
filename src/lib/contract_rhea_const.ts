@@ -3,13 +3,13 @@ import {
   ref_mainnet_contractId_const,
   ref_testnet_contractId_const,
 } from "@sleet-js/ref-exchange-methods-const";
-import { MY_BACKEND_NEAR_networkId } from "../new-env";
+import { MY_ENV_NEAR_networkId } from "../new-env";
 import { getStoredNetworkId } from "../new-hot";
 // ===========================================
 // ===========================================
 // env
 export const rhea_contractId_for_network_env =
-  MY_BACKEND_NEAR_networkId === "testnet"
+  MY_ENV_NEAR_networkId === "testnet"
     ? ref_testnet_contractId_const
     : ref_mainnet_contractId_const;
 // ===========================================

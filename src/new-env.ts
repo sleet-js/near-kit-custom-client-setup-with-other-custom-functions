@@ -5,8 +5,8 @@ import type { PrivateKey } from "near-kit";
 import * as dotenv from "dotenv";
 dotenv.config();
 // ==============================================
-// MY_BACKEND_ENV
-export const MY_BACKEND_NEAR_networkId:
+// MY_ENV
+export const MY_ENV_NEAR_networkId:
   | "mainnet"
   | "testnet"
   | "localnet"
@@ -17,16 +17,16 @@ export const MY_BACKEND_NEAR_networkId:
     | "testnet"
     | "localnet"
     | "betanet") || "testnet";
-export const MY_BACKEND_NEAR_accountId: string = process.env.env_accountId!;
-export const MY_BACKEND_NEAR_publicKey = process.env.env_publicKey;
+export const MY_ENV_NEAR_accountId: string = process.env.env_accountId!;
+export const MY_ENV_NEAR_publicKey = process.env.env_publicKey;
 // Handle private key format (with or without ed25519: prefix)
-export const MY_BACKEND_NEAR_privateKey: PrivateKey | undefined = process.env
+export const MY_ENV_NEAR_privateKey: PrivateKey | undefined = process.env
   .env_privateKey as PrivateKey | undefined;
 // ==============================================
 // Initialize for backend/scripts
 export const near_kit_env = new Near({
-  network: MY_BACKEND_NEAR_networkId,
-  privateKey: MY_BACKEND_NEAR_privateKey,
-  defaultSignerId: MY_BACKEND_NEAR_accountId,
+  network: MY_ENV_NEAR_networkId,
+  privateKey: MY_ENV_NEAR_privateKey,
+  defaultSignerId: MY_ENV_NEAR_accountId,
 });
 // ==============================================
