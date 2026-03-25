@@ -31,3 +31,11 @@ export interface ref_swap_function_args {
   referral_id: ref_args_params_interface["referral_id"];
 }
 // ================================================
+// export interface ref_get_return_function_args {
+//   pool_id: number;
+//   token_in: string;
+//   amount_in: string;
+//   token_out: string;
+// }
+// ================================================
+// ================================================
