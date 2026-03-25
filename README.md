@@ -15,9 +15,8 @@ a custom near-kit near client setup with hot wallet connect and functions for in
 develop and publish this package
 
 ```bash
-# i had issues with other versions
-bun add @hot-labs/near-connect@0.6.11
 bun install
+bun update --latest
 bun run tsc --noEmit
 # bun run index.ts
 bun run build
