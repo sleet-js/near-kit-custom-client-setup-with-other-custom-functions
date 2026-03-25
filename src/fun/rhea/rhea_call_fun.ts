@@ -39,7 +39,7 @@ export async function ref_swap_function(
     rhea_contractId,
     ref_exchange_methods_const.swap,
     {
-      actions: [swap_actions],
+      actions: swap_actions,
       referral_id: referral_id,
     },
   );

@@ -45,21 +45,21 @@ const swap_actions: ref_swap_action_type[] = [
 ];
 // ==============================================
 console.log("==============================================");
-console.log(
-  await wrap_near_deposit_fun(near_kit_env, ft_contractId, amount_near),
-);
+// console.log(
+//   await wrap_near_deposit_fun(near_kit_env, ft_contractId, amount_near),
+// );
 console.log("==============================================");
 // ==============================================
 console.log("==============================================");
-console.log(
-  await ft_transfer_call_fun(
-    near_kit_env,
-    ft_contractId,
-    receiver_id,
-    msg,
-    amount,
-  ),
-);
+// console.log(
+//   await ft_transfer_call_fun(
+//     near_kit_env,
+//     ft_contractId,
+//     receiver_id,
+//     msg,
+//     amount,
+//   ),
+// );
 console.log("==============================================");
 // ==============================================
 console.log("==============================================");
