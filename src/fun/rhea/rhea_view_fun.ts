@@ -1,11 +1,10 @@
 import { Near } from "near-kit";
 import { ref_exchange_methods_const } from "@sleet-js/ref-exchange-methods-const";
-import type {
-  ref_args_params_interface,
-} from "../../lib/contract_rhea_args";
+import type { ref_args_params_interface } from "../../lib/contract_rhea_args";
 import type {
   REF_GET_POOL_TYPE,
   REF_GET_DEPOSITS_TYPE,
+  STORAGE_BALANCE_OF_RESPONSE_TYPE,
 } from "../../types/rhea_ref_types";
 import {
   REF_GET_POOL_TYPE_Z_CONST,
@@ -18,6 +17,7 @@ import {
 // get_deposits
 // get_pools
 // get_return
+// storage_balance_of
 // ===========================================
 // ===========================================
 // ref_get_number_of_pools_function
@@ -96,6 +96,20 @@ export async function ref_get_return_function(
     },
   );
   return result as string;
+}
+// ================================================
+// ref_get_deposits_function
+export async function ref_storage_balance_of_function(
+  near: Near,
+  rhea_contractId: string,
+  accountId: ref_args_params_interface["account_id"],
+): Promise<STORAGE_BALANCE_OF_RESPONSE_TYPE> {
+  const result = await near.view(
+    rhea_contractId,
+    ref_exchange_methods_const.storage_balance_of,
+    { account_id: accountId },
+  );
+  return result as STORAGE_BALANCE_OF_RESPONSE_TYPE;
 }
 // ===========================================
 // ===========================================

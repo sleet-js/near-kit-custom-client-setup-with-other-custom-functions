@@ -6,6 +6,8 @@ import {
   ref_get_pool_function,
   ref_get_pools_function,
   ref_get_deposits_function,
+  ref_get_return_function,
+  ref_storage_balance_of_function,
 } from "../../src/index";
 // ==============================================
 console.log("==============================================");
@@ -45,6 +47,29 @@ console.log(
     near_kit_env,
     rhea_contractId_for_network_env,
     "sleet.testnet",
+  ),
+);
+console.log("==============================================");
+// ==============================================
+console.log("==============================================");
+console.log(
+  await ref_storage_balance_of_function(
+    near_kit_env,
+    rhea_contractId_for_network_env,
+    "sleet.testnet",
+  ),
+);
+console.log("==============================================");
+// ==============================================
+console.log("==============================================");
+console.log(
+  await ref_get_return_function(
+    near_kit_env,
+    rhea_contractId_for_network_env,
+    2459,
+    "shit-237.factory.v10.meme-cooking.testnet",
+    "1000",
+    "wrap.testnet",
   ),
 );
 console.log("==============================================");
