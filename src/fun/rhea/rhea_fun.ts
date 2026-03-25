@@ -77,5 +77,27 @@ export async function ref_get_pools_function(
   );
   return REF_GET_POOLS_TYPE_Z_CONST.parse(result);
 }
+// ================================================
+// ref_get_return_function
+export async function ref_get_return_function(
+  near: Near,
+  rhea_contractId: string,
+  pool_id: ref_args_params_interface["pool_id"],
+  token_in: ref_args_params_interface["token_in"],
+  amount_in: ref_args_params_interface["amount_in"],
+  token_out: ref_args_params_interface["token_out"],
+): Promise<string> {
+  const result = await near.view(
+    rhea_contractId,
+    ref_exchange_methods_const.get_return,
+    {
+      pool_id: pool_id,
+      token_in: token_in,
+      amount_in: amount_in,
+      token_out: token_out,
+    },
+  );
+  return result as string;
+}
 // ===========================================
 // ===========================================
