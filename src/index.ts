@@ -70,7 +70,7 @@ export {
   ref_get_pool_function,
   ref_get_pools_function,
   ref_get_return_function
-} from "./fun/rhea/rhea_fun";
+} from "./fun/rhea/rhea_view_fun";
 // ==== ft ====
 export {
   ft_balance_of_fun,
