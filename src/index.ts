@@ -72,6 +72,12 @@ export {
   ref_get_return_function,
   ref_storage_balance_of_function,
 } from "./fun/rhea/rhea_view_fun";
+export {
+  ref_storage_deposit_function,
+  ref_swap_function,
+  ref_withdraw_function,
+  ref_add_simple_pool_function,
+} from "./fun/rhea/rhea_call_fun";
 // ==== ft ====
 export {
   ft_balance_of_fun,

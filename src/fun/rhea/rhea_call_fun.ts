@@ -10,6 +10,8 @@ import type { FinalExecutionOutcome } from "near-kit";
 // call
 // storage_deposit
 // swap
+// withdraw
+// add_simple_pool
 // ===========================================
 // ref_storage_deposit_function
 export async function ref_storage_deposit_function(
@@ -40,6 +42,41 @@ export async function ref_swap_function(
       actions: [swap_actions],
       referral_id: referral_id,
     },
+  );
+  return result as FinalExecutionOutcome;
+}
+// ===========================================
+// ref_withdraw_function
+export async function ref_withdraw_function(
+  near: Near,
+  rhea_contractId: string,
+  amount: ref_args_params_interface["amount"],
+  token_id: ref_args_params_interface["token_id"],
+) {
+  const result = await near.call(
+    rhea_contractId,
+    ref_exchange_methods_const.withdraw,
+    {
+      amount: amount,
+      token_id: token_id,
+      unregister: false,
+      skip_unwrap_near: false,
+    },
+  );
+  return result as FinalExecutionOutcome;
+}
+// ===========================================
+// ref_add_simple_pool_function
+export async function ref_add_simple_pool_function(
+  near: Near,
+  rhea_contractId: string,
+  fee: ref_args_params_interface["fee"],
+  tokens: ref_args_params_interface["tokens"],
+) {
+  const result = await near.call(
+    rhea_contractId,
+    ref_exchange_methods_const.add_simple_pool,
+    { fee: fee, tokens: tokens },
   );
   return result as FinalExecutionOutcome;
 }
