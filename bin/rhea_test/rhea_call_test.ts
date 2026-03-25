@@ -8,16 +8,16 @@ import {
   // ft fun
   ft_transfer_call_fun,
   // rhea fun
-  ref_storage_deposit_function,
+  // ref_storage_deposit_function,
   ref_swap_function,
-  ref_withdraw_function,
-  ref_add_simple_pool_function,
+  // ref_withdraw_function,
+  // ref_add_simple_pool_function,
 } from "../../src/index";
 import type { ref_swap_action_type } from "../../src/index";
 // ==============================================
 // complete flow
 // 1. wrap NEAR
-// 2. rhea storage deposit
+// 2. rhea storage deposit ❌
 // 2. deposit/transfer to rhea
 // 3. swap
 // 4. withdraw ❌

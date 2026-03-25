@@ -52,7 +52,7 @@ export async function ft_transfer_call_fun(
     ft_contractId,
     ft_methods_const.ft_transfer_call,
     { msg: msg, amount: amount, receiver_id: receiver_id },
-    { attachedDeposit: "0.000000000000000000000001 NEAR" },
+    { attachedDeposit: "0.000000000000000000000001 NEAR", gas: "50 Tgas" },
   );
   return result as FinalExecutionOutcome;
 }
