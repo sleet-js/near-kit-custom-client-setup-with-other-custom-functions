@@ -6,8 +6,23 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "browser": "dist/index.js",
+  "browser": "dist/index_web.js",
   "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "browser": "./dist/index_web.js",
+      "default": "./dist/index.js"
+    },
+    "./web": {
+      "types": "./dist/index_web.d.ts",
+      "default": "./dist/index_web.js"
+    },
+    "./env": {
+      "types": "./dist/index_env.d.ts",
+      "default": "./dist/index_env.js"
+    }
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
