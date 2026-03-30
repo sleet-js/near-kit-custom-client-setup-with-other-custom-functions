@@ -1,7 +1,8 @@
 {
   "name": "@sleet-js/near-kit-custom-client-setup-with-other-custom-functions",
-  "description": "a custom near-kit near client setup",
-  "version": "0.0.11",
+  "description": "DEPRECATED - Use @near-kit-tool-box/web, @near-kit-tool-box/env, and @near-kit-tool-box/fun instead",
+  "version": "0.0.12",
+  "deprecated": "Deprecated: Use @near-kit-tool-box/web, @near-kit-tool-box/env, and @near-kit-tool-box/fun instead. See: https://github.com/sleet-js/near-kit-tool-box",
   "homepage": "https://sleet-js.near.page",
   "main": "dist/index.js",
   "module": "dist/index.js",
